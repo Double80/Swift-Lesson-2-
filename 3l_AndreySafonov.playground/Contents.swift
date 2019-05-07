@@ -38,6 +38,9 @@ struct car {
         }
     }
 
+let StatusEngine: StatusEngine
+let StatusWindows: StatusWindows
+let truckAction: TruckAction
 
 var BMW = car(name: "BMW M3", year: 2013, trunkVolume: 40, engine: true, windows: true, trunkFilledVolume: 15)
 var Mercedes = car(name: "Mercedes CLS", year: 2015, trunkVolume: 35, engine: false, windows: true, trunkFilledVolume: 5)
@@ -56,9 +59,9 @@ if BMW.year > Mercedes.year {
 
 // Не понял, как заставить перечисление выводить в print не просто текст, а более гибкую информацию. Например, в данном случае я указываю, что хочу загрузить багажник на 3. Соответственно мне нужно чтобы один из кейсов выводил именно эти данные на печать. Также с окнами и двигателем, если я указал бы в переменной action, что окна открыты, я хотел бы, чтобы кейс подтянул мне слово DOWN из enum carActions.
 
-var action = carActions.unloadTruck(action: .LOAD, cargoWeigth: 3)
+var actionBMW = carActions.unloadTruck(action: .LOAD, cargoWeigth: 3)
 
-switch action {
+switch actionBMW {
 case .startEngine:
     print("The engine is \(carActions.startEngine)")
 case .openWindows:
