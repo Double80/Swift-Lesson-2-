@@ -26,6 +26,13 @@ class manVIP: clothesPrice {
     }
 }
 
+extension manVIP: CustomStringConvertible {
+    var description: String {
+        return "Размер кольшелька \(bigWallet)"
+        
+    }
+}
+
 class manOrdinary:clothesPrice {
     var clothes: Double
     var smallWallet: Double
@@ -37,6 +44,13 @@ class manOrdinary:clothesPrice {
     init(smallWallet: Double, clothes: Double) {
         self.smallWallet = smallWallet
         self.clothes = clothes
+    }
+}
+
+extension manOrdinary: CustomStringConvertible {
+    var description: String {
+        return "Размер кольшелька \(smallWallet)"
+        
     }
 }
 
@@ -81,7 +95,7 @@ stackQueueOrdinary.push(manOrdinary(smallWallet: 500.0, clothes: 15_000.0))
 stackQueueOrdinary.push(manOrdinary(smallWallet: 341.5, clothes: 11_200.0))
 
 print(stackQueueOrdinary)
-print(stackQueueVIP) // Я предполагал, что выведутся два значения через запятую
+print(stackQueueVIP) 
 
 stackQueueOrdinary[0,1]
 print(stackQueueOrdinary[0,1])
