@@ -35,36 +35,35 @@ var paidByDriver = 0
             throw dpsPaymentSystemError.insufficientFunds(rublesLacking: fine.price - paidByDriver)
         }
         
-        paidByDriver -= fine.price
-        
         print("Оплачен штраф за \(name)")
         
     }
+    
 }
 
 
 let finesAlocated = [
     "Alex":"Первышение скорости",
-    "John":"Пересечение сплошной",
-    "John":"Неправильная парковка",
+    "John":"Пересечение двойной сплошной",
+    "Jack":"Неправильная парковка",
     "Bill":"Выключенные фары"
 ]
 
 
 func payFine(person: String, DPSPayment: dpsPaymentSystem) throws {
     
-    let fineToBePaid = finesAlocated[person] ?? ""
-    try dpsPaymentSystem.fines(fineName: fineToBePaid)
+    let fineToBePaid = finesAlocated[person] ?? "штраф"
+    try DPSPayment.fines(fineName: fineToBePaid)
 }
 
 var DPSpayment = dpsPaymentSystem()
-DPSpayment.paidByDriver = 3500
+DPSpayment.paidByDriver = 5000
 
 
 do {
-    try payFine(person: "John", DPSPayment: dpsPaymentSystem)
-} catch dpsPaymentSystemError.insufficientFunds {
-    print("Недостаточно средств. требуется доплатить \(dpsPaymentSystem.paidByDriver)")
+    try payFine(person: "John", DPSPayment: DPSpayment)
+} catch dpsPaymentSystemError.insufficientFunds(let rublesLacking) {
+    print("Недостаточно средств. требуется доплатить \(rublesLacking)")
 } catch dpsPaymentSystemError.invalidFine {
     print("Данного штрафа не существует")
 }
