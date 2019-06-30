@@ -14,6 +14,8 @@
 		6D375A2122C968F500771C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D375A1F22C968F500771C82 /* LaunchScreen.storyboard */; };
 		6D375A2C22C968F500771C82 /* VK_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D375A2B22C968F500771C82 /* VK_clientTests.swift */; };
 		6D375A3722C968F500771C82 /* VK_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D375A3622C968F500771C82 /* VK_clientUITests.swift */; };
+		6D375A4522C9696900771C82 /* VK-client in Resources */ = {isa = PBXBuildFile; fileRef = 6D375A4422C9696900771C82 /* VK-client */; };
+		6D375A4922C969AD00771C82 /* f0495ad41a40d30bdcc44b19bcd93b21.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D375A4822C969AD00771C82 /* f0495ad41a40d30bdcc44b19bcd93b21.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		6D375A3222C968F500771C82 /* VK-clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VK-clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D375A3622C968F500771C82 /* VK_clientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_clientUITests.swift; sourceTree = "<group>"; };
 		6D375A3822C968F500771C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D375A4422C9696900771C82 /* VK-client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "VK-client"; sourceTree = SOURCE_ROOT; };
+		6D375A4822C969AD00771C82 /* f0495ad41a40d30bdcc44b19bcd93b21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = f0495ad41a40d30bdcc44b19bcd93b21.png; path = ../../../f0495ad41a40d30bdcc44b19bcd93b21.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		6D375A1522C968F400771C82 /* VK-client */ = {
 			isa = PBXGroup;
 			children = (
+				6D375A4822C969AD00771C82 /* f0495ad41a40d30bdcc44b19bcd93b21.png */,
+				6D375A4422C9696900771C82 /* VK-client */,
 				6D375A1622C968F400771C82 /* AppDelegate.swift */,
 				6D375A1822C968F400771C82 /* ViewController.swift */,
 				6D375A1A22C968F400771C82 /* Main.storyboard */,
@@ -230,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D375A2122C968F500771C82 /* LaunchScreen.storyboard in Resources */,
+				6D375A4922C969AD00771C82 /* f0495ad41a40d30bdcc44b19bcd93b21.png in Resources */,
 				6D375A1E22C968F400771C82 /* Assets.xcassets in Resources */,
+				6D375A4522C9696900771C82 /* VK-client in Resources */,
 				6D375A1C22C968F400771C82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
