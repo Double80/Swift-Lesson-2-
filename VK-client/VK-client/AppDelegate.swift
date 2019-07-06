@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  VK-client
 //
-//  Created by Andrey on 01/07/2019.
+//  Created by Andrey on 06/07/2019.
 //  Copyright © 2019 Andrey. All rights reserved.
 //
 
